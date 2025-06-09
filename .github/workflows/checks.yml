@@ -1,0 +1,21 @@
+name: checks
+
+on:
+  - push
+
+jobs:
+  xmllint:
+    name: Lint ruleset.xml
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: composer install --ansi --no-interaction --no-progress --prefer-dist
+
+      - name: Lint ruleset.xml
+        uses: ChristophWurst/xmllint-action@v1
+        with:
+          xml-file: Vojtechdobes/ruleset.xml
+          xml-schema-file: vendor/squizlabs/php_codesniffer/phpcs.xsd
