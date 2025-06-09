@@ -1,0 +1,20 @@
+{
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": false
+		},
+		"sort-packages": true
+	},
+	"keywords": [
+		"code-style",
+		"codesniffer",
+		"coding-standard",
+		"dev",
+		"phpcs"
+	],
+	"name": "vojtech-dobes/php-codestyle",
+	"require": {
+		"slevomat/coding-standard": "~8.19.0"
+	},
+	"type": "phpcodesniffer-standard"
+}
