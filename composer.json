@@ -12,6 +12,9 @@
 		"dev",
 		"phpcs"
 	],
+	"license": [
+		"BSD-3-Clause"
+	],
 	"name": "vojtech-dobes/php-codestyle",
 	"require": {
 		"slevomat/coding-standard": "~8.19.0"
